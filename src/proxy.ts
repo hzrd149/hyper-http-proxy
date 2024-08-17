@@ -8,10 +8,9 @@ import * as url from "url";
 import * as http from "http";
 import * as os from "os";
 import HyperDHT from "hyperdht";
-
+import { decodeAddress, isAddress } from "hyper-address";
 import createDebug from "debug";
 
-import { decodeAddress, isAddress } from "./address.js";
 import { HyperAgent } from "./agent.js";
 
 // log levels
@@ -437,7 +436,7 @@ async function onconnect(
 
   let target: net.Socket;
   if (isAddress(opts.host)) {
-    target = this.node.connect(decodeAddress(opts.host));
+    target = this.node.connect(Buffer.from(decodeAddress(opts.host)));
   } else target = net.connect(opts);
 
   target.on("connect", ontargetconnect);

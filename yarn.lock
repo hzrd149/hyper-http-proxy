@@ -450,6 +450,15 @@ has-flag@^3.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
   integrity sha512-sKJf1+ceQBr4SMkvQnBDNDtf4TXpVhVGateu0t918bl30FnbE2m4vNLX+VWe/dpjlb+HugGYzW7uQXH98HPEYw==
 
+hyper-address@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/hyper-address/-/hyper-address-0.1.0.tgz#c9174a70412ed2e1667c026b65986f054da18ef8"
+  integrity sha512-YrBBhKEKAfGKzS+u4WV0wjgNpT4eUA4U58Uk2bWCe1KWP/AFn76D/HRUpBDWZWPqWAYROEmK3z+7D6kOfqMPbA==
+  dependencies:
+    "@scure/base" "^1.1.7"
+    commander "^12.1.0"
+    debug "^4.3.6"
+
 hypercore-crypto@^3.3.0, hypercore-crypto@^3.3.1:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/hypercore-crypto/-/hypercore-crypto-3.4.0.tgz#aff1893efc7b7ec5d1dfdc4270033fd94e18b96d"

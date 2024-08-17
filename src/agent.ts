@@ -3,7 +3,7 @@ import HyperDHT from "hyperdht";
 import { Duplex } from "stream";
 import * as net from "net";
 import * as tls from "tls";
-import { decodeAddress, isAddress } from "./address.js";
+import { decodeAddress, isAddress } from "hyper-address";
 import { Agent, AgentConnectOpts } from "agent-base";
 
 import createDebug from "debug";
@@ -23,7 +23,7 @@ export class HyperAgent extends Agent {
     options: AgentConnectOpts,
   ): http.Agent | Duplex | Promise<http.Agent | Duplex> {
     if (isAddress(req.host)) {
-      const pubkey = decodeAddress(req.host);
+      const pubkey = Buffer.from(decodeAddress(req.host));
       debug("Connecting to", pubkey.toString("hex"));
       const socket = this.node.connect(pubkey);
 

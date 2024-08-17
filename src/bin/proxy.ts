@@ -7,7 +7,7 @@ import { once } from "events";
 import basicAuthParser from "basic-auth-parser";
 
 import { createProxy } from "../proxy.js";
-import { decodeAddress, encodeAddress } from "../address.js";
+import { decodeAddress, encodeAddress } from "hyper-address";
 
 const debug = createDebug("proxy");
 

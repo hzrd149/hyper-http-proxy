@@ -1,5 +1,5 @@
 import { HyperAgent } from "./agent.js";
 import { createProxy } from "./proxy.js";
-import { decodeAddress, encodeAddress } from "./address.js";
+import { decodeAddress, encodeAddress, isAddress } from "hyper-address";
 
-export { HyperAgent, createProxy, decodeAddress, encodeAddress };
+export { HyperAgent, createProxy, decodeAddress, encodeAddress, isAddress };
