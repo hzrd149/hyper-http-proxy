@@ -46,6 +46,12 @@ export function createProxy(
   proxy.on("connect", onconnect);
   proxy.node = node || new HyperDHT();
   proxy.agent = new HyperAgent({ node: proxy.node });
+
+  // if the node was automatically created, destroy on server close
+  proxy.on("close", () => {
+    if (!node) proxy.node.destroy({ force: true });
+  });
+
   return proxy;
 }
 

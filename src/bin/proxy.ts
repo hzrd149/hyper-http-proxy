@@ -92,6 +92,17 @@ program
         proxy.address().port,
       );
     });
+
+    function shutdown() {
+      console.log("Shutting down...");
+
+      proxy.close(() => {
+        process.exit(0);
+      });
+    }
+
+    process.on("SIGINT", shutdown);
+    process.on("SIGTERM", shutdown);
   });
 
 program.parse();
