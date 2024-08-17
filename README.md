@@ -66,3 +66,4 @@ To configure FireFox to use the local proxy, follow these steps
 - Make sure the "Proxy DNS when using SOCKS v5" option is checked
 
 Once your done it should look like this
+![image](https://github.com/user-attachments/assets/45b5993b-e17b-4b28-a83f-9203ba4d7ae6)
