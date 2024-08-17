@@ -2,7 +2,9 @@
   "name": "hyper-http-proxy",
   "version": "0.1.0",
   "type": "module",
-  "main": "dist/bin/proxy.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "hzrd149",
   "license": "MIT",
   "files": [
     "dist"
@@ -17,7 +19,6 @@
   },
   "dependencies": {
     "@scure/base": "^1.1.7",
-    "@types/args": "^5.0.3",
     "agent-base": "^7.1.1",
     "basic-auth-parser": "^0.0.2-1",
     "commander": "^12.1.0",
@@ -35,9 +36,6 @@
     "typescript": "^5.5.4"
   },
   "nodemonConfig": {
-    "ignore": [
-      "data/**"
-    ],
     "exec": "node",
     "signal": "SIGTERM"
   }

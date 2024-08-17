@@ -223,11 +223,6 @@
   dependencies:
     tslib "^2.4.0"
 
-"@types/args@^5.0.3":
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/@types/args/-/args-5.0.3.tgz#a49d2839c8e96177d7efd391cd0ac62243b0b7f0"
-  integrity sha512-7dNWhsptvu0ZgJPAqXlG3DtK5/YHWCtaixBPunNBDRyY9Scy2jQfIb2s7rWIN4Mx9bRnbVM72lEnQd3X8UxJTA==
-
 "@types/debug@^4.1.12":
   version "4.1.12"
   resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.12.tgz#a155f21690871953410df4b6b6f53187f0500917"
