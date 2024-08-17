@@ -1,6 +1,6 @@
 # Hyper HTTP proxy
 
-A simple HTTP Proxy for [HyperDHT](https://docs.pears.com/building-blocks/hyperdht) connections using [bech32 encoded pubkeys](./src/address.ts)
+A simple HTTP Proxy for [HyperDHT](https://docs.pears.com/building-blocks/hyperdht) connections using [bech32 encoded connection strings](https://github.com/hzrd149/hyper-address)
 
 ## Using the HyperAgent class
 
