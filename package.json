@@ -9,6 +9,7 @@
   ],
   "bin": "dist/bin/proxy.js",
   "scripts": {
+    "prepublish": "tsc",
     "start": "node dist/bin/proxy.js",
     "dev": "nodemon --loader @swc-node/register/esm src/bin/proxy.ts",
     "build": "tsc",
